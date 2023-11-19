@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>จองคิวร้านเหล้า</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="#">เกี่ยวกับเรา</a></li>
+        <li><a href="#">บริการ</a></li>
+        <li><a href="#">ติดต่อเรา</a></li>
+        <li><a id="book-now-btn" href="#">จองคิว</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ส่วนนี้เป็นส่วนของเนื้อหาหน้าแรก ซึ่งอาจมีเนื้อหาอื่น ๆ ตามต้องการ -->
+    <section class="home-content">
+      <h1>ยินดีต้อนรับสู่เว็บไซต์จองคิวร้านเหล้า</h1>
+      <!-- ส่วนของเนื้อหาหน้าแรก -->
+    </section>
+
+    <section class="booking-form hidden">
+      <!-- ส่วนของฟอร์มการจองคิว -->
+      <h2>จองคิวร้านเหล้า</h2>
+      <form id="reservation-form">
+        <label for="name">ชื่อ:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">วันที่ต้องการ:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">เวลา:</label>
+        <input type="time" id="time" name="time" required>
+
+        <input type="submit" value="ยืนยันการจอง">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; ปี พ.ศ. xxxx จองคิวร้านเหล้า</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
